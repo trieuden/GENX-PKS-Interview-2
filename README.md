@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# Portfolio
+### Giới thiệu bản thân -  xây dựng bằng ReactJs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Mô tả
+Đây là một dự án giới thiệu bản thân được xây dựng bằng ReactJs, Material UI, ...
+## Tính năng
+- Giới thiệu cụ thể thông tin cá nhân
 
-Currently, two official plugins are available:
+- Trình bày được các kĩ bằng có được
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Chia sẽ các dự án cá nhân, nhóm đã xây dựng
 
-## React Compiler
+- Tạo được hứng thú cho nhà tuyển dụng, và để lại các thức liên lạc
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Công nghệ sử dụng
+- ReactJs: (https://react.dev/)
+  
+- Material UI: (https://mui.com/material-ui/) 
 
-## Expanding the ESLint configuration
+- TypeScript: (https://www.typescriptlang.org/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Cài đặt
+### Clone the repository:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+#### Bash
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+$ git clone https://github.com/trieuden/GENX-PKS-Interview-2.git
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+$ cd GENX-PKS-Interview-2
 ```
+### Cài đặt các dependencies:
+
+#### Bash
+
+```bash
+$ npm install
+```
+## Chạy ứng dụng
+### Chạy ở chế độ development:
+
+#### Bash
+```bash
+$ npm run dev
+```
+- Ứng dụng sẽ chạy tại http://localhost:5173/.
+
+## Đóng góp
+#### Nếu bạn muốn đóng góp cho dự án, vui lòng tạo một Pull Request. Chúng tôi luôn hoan nghênh các ý kiến đóng góp để cải thiện sản phẩm.
+
+1. Fork a project
+
+2. Tạo một branch mới (git checkout -b feature/AmazingFeature)
+
+3. Commit các thay đổi của bạn (git commit -m 'Add some AmazingFeature')</mark>
+
+4. Push lên branch (git push origin feature/AmazingFeature)
+
+5. Mở một Pull Request
+
+## Giấy phép
+#### Dự án này được cấp phép theo MIT License.
