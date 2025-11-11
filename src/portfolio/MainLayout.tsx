@@ -57,7 +57,7 @@ export const MainLayout = () => {
       </Box>
       <Stack direction={isMobile ? 'column' : 'row'} spacing={6} className="p-4" sx={{ paddingTop: isMobile ? '80px' : '120px' }}>
         {/* Card */}
-        {path !== '/contact' && (
+        {(path !== '/contact' || !isMobile) && (
           <Box flex={1} className="text-white flex h-fit ">
             <Stack
               className={'rounded-3xl'}
