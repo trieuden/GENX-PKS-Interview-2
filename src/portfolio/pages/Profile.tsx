@@ -1,11 +1,5 @@
-import { Stack, Box, useTheme, useMediaQuery, Button } from '@mui/material';
+import { Stack, useTheme, useMediaQuery } from '@mui/material';
 import { Man2Outlined, LocationOnOutlined, CalendarToday, EmailOutlined, LocalPhoneOutlined } from '@mui/icons-material';
-import { useState, useEffect } from 'react';
-
-type GithubProfile = {
-  avatar_url: string;
-  name: string;
-};
 
 export const Profile = () => {
   const theme = useTheme();

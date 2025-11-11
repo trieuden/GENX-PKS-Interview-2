@@ -1,5 +1,4 @@
-import { Stack, Box, useTheme, useMediaQuery, Button, LinearProgress, Typography } from '@mui/material';
-import { Man2Outlined, LocationOnOutlined, CalendarToday, EmailOutlined, LocalPhoneOutlined } from '@mui/icons-material';
+import { Stack, useTheme, useMediaQuery, LinearProgress } from '@mui/material';
 
 export const Skills = () => {
   const theme = useTheme();

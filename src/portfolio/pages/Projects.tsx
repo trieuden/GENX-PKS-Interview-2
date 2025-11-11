@@ -1,4 +1,4 @@
-import { Stack, Box, useTheme, useMediaQuery, Button } from '@mui/material';
+import { Stack, useTheme, useMediaQuery } from '@mui/material';
 
 export const Projects = () => {
   const theme = useTheme();
