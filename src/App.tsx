@@ -1,35 +1,74 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { HomePage } from './portfolio/pages/HomePage';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { Profile } from './portfolio/pages/Profile';
+import { MainLayout } from './portfolio/MainLayout';
+import { Skills } from './portfolio/pages/Skills';
+import { Projects } from './portfolio/pages/Projects';
+import { Contact } from './portfolio/pages/Contact';
+import './index.css';
+import React from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
+const PageWrapper: React.FC<{ children: React.ReactNode; id?: string }> = ({ children }) => <div className="page">{children}</div>;
+
+function AnimatedRoutes() {
+  const location = useLocation();
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Routes location={location}>
+      <Route
+        path="/"
+        element={
+          <PageWrapper key={location.pathname}>
+            <HomePage />
+          </PageWrapper>
+        }
+      />
+      <Route element={<MainLayout />}>
+        <Route
+          path="/profile"
+          element={
+            <PageWrapper key={location.pathname}>
+              <Profile />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/skills"
+          element={
+            <PageWrapper key={location.pathname}>
+              <Skills />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/projects"
+          element={
+            <PageWrapper key={location.pathname}>
+              <Projects />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <PageWrapper key={location.pathname}>
+              <Contact />
+            </PageWrapper>
+          }
+        />
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <BrowserRouter>
+      <div style={{ position: 'relative' }}>
+        <AnimatedRoutes />
+      </div>
+    </BrowserRouter>
+  );
+}
+
+export default App;
