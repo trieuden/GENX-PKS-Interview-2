@@ -24,7 +24,7 @@ export const HomePage = () => {
   }, []);
 
   return (
-    <Box flex={1} className="text-white h-[100vh] items-center justify-center flex">
+    <Box flex={1} className="text-white h-[100vh] items-center justify-center flex" component={'main'}>
       <Stack
         className={'rounded-3xl'}
         justifyContent={'center'}
@@ -54,10 +54,10 @@ export const HomePage = () => {
             <h2 className="text-3xl font-bold mt-12 text-green-500">Huỳnh Ngọc Triều</h2>
             <h3 className={`text-[18px] text-center text-gray-400 text-italic`}>Frontend Developer Intern</h3>
           </Stack>
-          <span className="text-gray-500 text-[14px]">
+          <p className="text-gray-500 text-[14px]">
             Với niềm đam mê, kinh nghiệm thực tiễn và tự học về phát triển front-end, tôi sẵn sàng đóng góp vào việc xây dựng các sản phẩm web chất
             lượng cao.
-          </span>
+          </p>
           <Stack direction={'row'} spacing={1} className="flex-wrap w-full justify-center">
             <a
               href="https://www.facebook.com/trieudennn"

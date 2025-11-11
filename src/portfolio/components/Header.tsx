@@ -47,7 +47,7 @@ export const Header = () => {
   };
 
   return (
-    <Stack direction={'row'} className="bg-[#cccccc] rounded-full p-2" spacing={2}>
+    <Stack component={'header'} direction={'row'} className="bg-[#cccccc] rounded-full p-2" spacing={2}>
       <IconWithLabel
         icon={<AccountCircleOutlined className={`${currentPath === '/profile' ? 'text-[#248f24]' : 'text-[#595959]'}`} />}
         label="Profile"

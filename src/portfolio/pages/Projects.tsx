@@ -30,14 +30,15 @@ export const Projects = () => {
   ];
 
   return (
-    <Stack flex={1} spacing={3}>
+    <Stack flex={1} spacing={3} component={'main'}>
       {/* Info */}
       <Stack spacing={2}>
-        <span className={` text-4xl text-green-500 font-bold align-center`}>Dự án</span>
+        <h2 className={` text-4xl text-green-500 font-bold align-center`}>Dự án</h2>
         <Stack direction={'column'} spacing={2} paddingLeft={2} className={isMobile ? 'flex-col' : ''}>
           <Stack spacing={2} className="w-[95%]">
             <Stack spacing={8}>
               <Stack
+                component={'article'}
                 sx={{
                   animation: 'slideDown 0.8s ease-out forwards',
                   transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
@@ -56,9 +57,9 @@ export const Projects = () => {
                 >
                   <Stack className={`${isMobile ? 'w-[100%]' : 'w-[70%]'} z-1`}>
                     <i className={` ${isMobile ? 'text-xs' : 'text-md'} text-gray-500`}>7/2025 - Hiện tại</i>
-                    <span className={` text-green-500 ${isMobile ? 'text-2xl' : 'text-3xl'} mb-4`}>
+                    <h3 className={` text-green-500 ${isMobile ? 'text-2xl' : 'text-3xl'} mb-4`}>
                       English Vocabulary Learning Website <span className="text-xs text-gray-500">Cá nhân</span>
-                    </span>
+                    </h3>
                     <span className="bg-[#3a4350] p-2 rounded-md">
                       Website hỗ trợ học từ vựng tiếng Anh, được xây dựng bằng NextJs, NestJs và triển khai trên Vercel. Website bao gồm các chức năng
                       cơ bản để hỗ trợ việc học từ vựng và tích hợp AI để tạo câu hỏi liên quan đến từ vựng, tạo đoạn văn và chấm điểm. Có giao diện
@@ -99,6 +100,7 @@ export const Projects = () => {
                 </Stack>
               </Stack>
               <Stack
+                component={'article'}
                 sx={{
                   animation: 'slideDown 0.8s ease-out forwards',
                   transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
@@ -117,10 +119,10 @@ export const Projects = () => {
                 >
                   <Stack className={`${isMobile ? 'w-[100%]' : 'w-[70%]'} z-1 text-end`}>
                     <i className={` ${isMobile ? 'text-xs' : 'text-md'} text-gray-500`}>1/2024 - 12/2024</i>
-                    <span className={` text-green-500 ${isMobile ? 'text-2xl' : 'text-3xl'} mb-4`}>
+                    <h3 className={` text-green-500 ${isMobile ? 'text-2xl' : 'text-3xl'} mb-4`}>
                       <span className="text-xs text-gray-500">Cá nhân </span>
                       Personal Management App
-                    </span>
+                    </h3>
                     <span className="bg-[#3a435059] p-2 rounded-md">
                       Một ứng dụng quản lý chi tiêu hàng ngày bao gồm các chức năng theo dõi cả thu nhập và chi tiêu hàng ngày, hàng tháng. Được xây
                       dựng bằng hai ngôn ngữ chính là React Native và NodeJs.
@@ -160,6 +162,7 @@ export const Projects = () => {
               </Stack>
 
               <Stack
+                component={'article'}
                 sx={{
                   animation: 'slideDown 0.8s ease-out forwards',
                   transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
@@ -178,9 +181,9 @@ export const Projects = () => {
                 >
                   <Stack className={`${isMobile ? 'w-[100%]' : 'w-[70%]'} z-1`}>
                     <i className={` ${isMobile ? 'text-xs' : 'text-md'} text-gray-500`}>7/2025 - 10/2025</i>
-                    <span className={` text-green-500 ${isMobile ? 'text-2xl' : 'text-3xl'} mb-4`}>
+                    <h3 className={` text-green-500 ${isMobile ? 'text-2xl' : 'text-3xl'} mb-4`}>
                       Sports Field Manager Website <span className="text-xs text-gray-500">Nhóm 4</span>
-                    </span>
+                    </h3>
                     <span className="bg-[#3a4350] p-2 rounded-md">
                       Trang web quản lý sân thể thao với chức năng quản lý việc cho thuê sân thể thao của người dùng, chủ sở hữu sân vận động và quản
                       lý hệ thống. Đầy đủ các chức năng từ thống kê, quản lý sân thể thao, thanh toán, người dùng, v.v.

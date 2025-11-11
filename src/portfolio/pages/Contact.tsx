@@ -4,7 +4,7 @@ export const Contact = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   return (
-    <Stack flex={1} alignItems={'center'}>
+    <Stack flex={1} alignItems={'center'} component={'main'}>
       <Stack
         className={`rounded-3xl ${isMobile ? 'w-[100%]' : 'w-[50%]'}`}
         sx={{

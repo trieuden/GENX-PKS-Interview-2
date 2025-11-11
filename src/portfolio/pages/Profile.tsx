@@ -6,10 +6,10 @@ export const Profile = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
-    <Stack flex={1} spacing={3}>
+    <Stack flex={1} spacing={3} component={'main'}>
       {/* Info */}
-      <Stack spacing={2}>
-        <span className={` text-4xl text-green-500 font-bold align-center`}>Thông tin cá nhân</span>
+      <Stack spacing={2} component="section">
+        <h2 className={` text-4xl text-green-500 font-bold align-center`}>Thông tin cá nhân</h2>
         <Stack direction={'column'} spacing={2} paddingLeft={2} className={isMobile ? 'flex-col' : ''}>
           <Stack direction={'row'} spacing={2}>
             <Stack direction={'row'} spacing={1} className="items-center text-gray-400 bg-gray-800 p-2 rounded-md w-fit mb-4 cursor-pointer">
@@ -32,19 +32,21 @@ export const Profile = () => {
           </Stack>
         </Stack>
       </Stack>
-      <Stack spacing={2}>
+      {/* career */}
+      <Stack spacing={2} component="section">
         <span className={` text-4xl text-green-500 font-bold align-center`}>Mục tiêu nghề nghiệp</span>
-        <span className="text-gray-400 text-[18px] pl-4">
+        <p className="text-gray-400 text-[18px] pl-4">
           Tôi mong muốn trở thành một Frontend Developer chuyên nghiệp, hoàn thành tốt các công việc được giao trong quá trình thực tập để leo lên các
           cấp bậc cao hơn trong tương lai. Tôi khao khát được học hỏi và phát triển kỹ năng của mình trong môi trường làm việc thực tế, đóng góp vào
           sự thành công của công ty.
-        </span>
+        </p>
       </Stack>
       {/* edu */}
-      <Stack spacing={2}>
+      <Stack spacing={2} component="section">
         <span className={` text-4xl text-green-500 font-bold align-center`}>Học vấn</span>
         <Stack paddingLeft={2} spacing={2} direction={isMobile ? 'column' : 'row'} className="w-fit">
           <Stack
+            component="article"
             flex={1}
             direction={isMobile ? 'column' : 'row'}
             alignItems="center"
@@ -79,10 +81,11 @@ export const Profile = () => {
         </Stack>
       </Stack>
       {/* exp */}
-      <Stack spacing={2}>
+      <Stack spacing={2} component="section">
         <span className={` text-4xl text-green-500 font-bold align-center`}>Kinh nghiệm</span>
         <Stack spacing={2} direction={isMobile ? 'column' : 'row'} paddingLeft={2} className="w-fit">
           <Stack
+            component="article"
             flex={1}
             direction={isMobile ? 'column' : 'row'}
             alignItems="center"

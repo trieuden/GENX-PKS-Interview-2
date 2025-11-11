@@ -67,7 +67,7 @@ export const Skills = () => {
     <Stack flex={1} spacing={3}>
       {/* Info */}
       <Stack spacing={2}>
-        <span className={` text-4xl text-green-500 font-bold align-center`}>Kĩ năng kỹ thuật</span>
+        <h2 className={` text-4xl text-green-500 font-bold align-center`}>Kĩ năng kỹ thuật</h2>
         <Stack direction={'column'} spacing={4} className={isMobile ? 'flex-col' : ''}>
           {/* Language and frameworks */}
           <Stack spacing={2}>
