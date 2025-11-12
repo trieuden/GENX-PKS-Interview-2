@@ -106,8 +106,8 @@ export const Projects = () => {
                   transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
 
                   '&:hover': {
-                    transform: 'scale(1.05)', // Phóng to 110% và nghiêng trái 5 độ
-                    boxShadow: '0 8px 35px rgba(117, 26, 255, 0.7)', // Tăng độ bóng để nổi bật hơn
+                    transform: 'scale(1.05)',
+                    boxShadow: '0 8px 35px rgba(117, 26, 255, 0.7)',
                   },
                 }}
               >

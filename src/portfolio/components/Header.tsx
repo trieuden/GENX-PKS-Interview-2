@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { IconButton, Stack, Collapse } from '@mui/material';
 import { AccountCircleOutlined, BuildOutlined, WorkOutlineOutlined, PhoneEnabledOutlined } from '@mui/icons-material';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -37,10 +37,6 @@ export const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const currentPath = location.pathname;
-
-  useEffect(() => {
-    console.log('Current path:', currentPath);
-  }, [currentPath]);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });

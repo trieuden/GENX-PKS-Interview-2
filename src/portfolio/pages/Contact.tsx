@@ -1,5 +1,4 @@
-import { Button, Stack, TextField } from '@mui/material';
-import { useTheme, useMediaQuery } from '@mui/material';
+import { Button, Stack, TextField, useTheme, useMediaQuery } from '@mui/material';
 export const Contact = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
